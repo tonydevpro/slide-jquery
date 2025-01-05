@@ -60,7 +60,7 @@ body {
 
 .author-name {
     position: absolute;
-    bottom: 20px;
+    /*bottom: 20px;*/
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.2rem;
@@ -98,3 +98,31 @@ button.prev {
 button.next {
     right: 10px;
 }
+.info {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75); /* Fundo mais escuro para maior contraste */
+    padding: 15px 25px; /* Mais espaçamento interno */
+    border-radius: 10px; /* Bordas mais suaves */
+    color: white;
+    z-index: 1;
+    max-width: 85%; /* Garantir que o texto não ultrapasse os limites */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+}
+
+.painting-name {
+    font-size: 1.4rem; /* Nome da pintura maior e mais destacado */
+    font-weight: bold;
+    margin-bottom: 8px; /* Espaçamento entre o nome da pintura e o autor */
+    text-transform: capitalize; /* Primeira letra de cada palavra em maiúsculo */
+}
+
+.author-name {
+    font-size: 1.1rem; /* Autor um pouco menor que o nome da pintura */
+    opacity: 0.9; /* Menor contraste para diferenciar */
+    font-style: italic; /* Deixa o nome do autor mais elegante */
+}
+
